@@ -41,19 +41,30 @@
     transform: scale(1.1);
 }
 .basic-info{
-    height: 500px;
-    width: 450px;
+    height: 600px;
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .name{
     text-align: center;
 }
 /* ----------------------------------------------------------- */
 
-/* Education section style   */
-/* .education-section{
-    height: 500px;
-    width: 1050px;
-} */
+/* project section style   */
+.project-section{
+    flex: 2;
+    height: 600px;
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 
 

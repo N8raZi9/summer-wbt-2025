@@ -1,12 +1,14 @@
-.body{
-    margin: 0px 150px;  
+.body {
+    margin: 0px 150px;
 }
-.gray{
+
+.gray {
     color: rgba(0, 0, 0, 0.5);
 }
+
 /* nav bar style  */
 .nav-bar {
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 50px 150px;
     align-items: center;
 }
@@ -24,69 +26,89 @@
 }
 
 /* basic information style  */
-.home{
+.home {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* Istiak's  basic information style  */
-.my-image{
+.my-image {
     height: auto;
     width: 150px;
     margin-left: 33%;
     margin-right: 33%;
 }
-.my-image:hover{
+
+.my-image:hover {
     transform: scale(1.1);
 }
-.basic-info{
-    height: 500px;
-    width: 40%;
+
+.basic-info {
+    height: 600px;
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.name{
+
+.name {
     text-align: center;
 }
+
 /* ----------------------------------------------------------- */
 
 /* Education section style   */
 
 
-.content-section{
-    height: 500px;
+.content-section {
+    flex: 2;
+    height: 600px;
     width: 60%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 /* footer sections style   */
-.footer{
-  
+.footer {
+
     align-content: center;
     margin-top: 100px;
 }
-.footer-text{
-    font-size:small;
+
+.footer-text {
+    font-size: small;
     color: rgb(104, 104, 104);
     text-align: center;
 }
-.info-icon{
+
+.info-icon {
     display: flex;
     justify-content: space-between;
     margin: 0px 500px 20px 500px;
 }
-.icon-box{
+
+.icon-box {
     border: 2px;
     border-color: gray;
     border-radius: 20px;
     height: 30px;
     width: 30px;
-    background-color:rgb(158, 198, 200);
+    background-color: rgb(158, 198, 200);
 }
-.icon-box:hover{
+
+.icon-box:hover {
     transform: scale(1.1);
     background-color: rgb(102, 122, 111);
 }
-.icon{
+
+.icon {
     padding: 4px;
     height: auto;
     width: 20px;
