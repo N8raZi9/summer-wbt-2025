@@ -27,20 +27,22 @@
 .home{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Istiak's  basic information style  */
 .my-image{
     height: auto;
     width: 150px;
-    margin-left: 150px;
+    margin-left: 33%;
+    margin-right: 33%;
 }
 .my-image:hover{
     transform: scale(1.1);
 }
 .basic-info{
     height: 500px;
-    width: 450px;
+    width: 40%;
 }
 .name{
     text-align: center;
@@ -52,7 +54,7 @@
 
 .content-section{
     height: 500px;
-    width: 1050px;
+    width: 60%;
 }
 
 
@@ -70,7 +72,7 @@
 .info-icon{
     display: flex;
     justify-content: space-between;
-    margin: 0px 550px 20px 550px;
+    margin: 0px 500px 20px 500px;
 }
 .icon-box{
     border: 2px;
