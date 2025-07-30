@@ -1,0 +1,180 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0; /* Remove default body margin */
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .section-title {
+            font-weight: bold;
+            color: #b30000; /* Dark red similar to the image */
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            flex: 0 0 150px; /* Fixed width for labels */
+            text-align: right;
+            padding-right: 15px;
+            font-size: 0.95em;
+            color: #333;
+            box-sizing: border-box;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select,
+        .form-group textarea {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.95em;
+            min-width: 200px; /* Ensure input fields don't get too small */
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .form-group .radio-group,
+        .form-group .checkbox-group {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .form-group .radio-group label,
+        .form-group .checkbox-group label {
+            flex: unset; /* Remove fixed width for inner labels */
+            text-align: left;
+            padding-right: 0;
+        }
+        /* Specific style for inline input within radio/checkbox groups */
+        .form-group .radio-group .inline-input,
+        .form-group .checkbox-group .inline-input {
+            width: 96px; /* Equivalent to w-24 in Tailwind */
+            min-width: unset; /* Override min-width for these specific inputs */
+        }
+        .form-group .note-text .inline-input {
+            width: 80px; /* Equivalent to w-20 in Tailwind */
+            min-width: unset;
+        }
+
+        .full-width-input {
+            flex: 1 0 100%; /* Make input take full width if needed */
+            margin-left: 150px; /* Align with other inputs */
+            box-sizing: border-box;
+        }
+        .full-width-label-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .full-width-label-group label {
+            text-align: left;
+            padding-left: 0;
+            margin-bottom: 5px;
+            flex: unset;
+        }
+        .note-text {
+            font-size: 0.85em;
+            color: #666;
+            margin-left: 150px; /* Align with inputs */
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .button-group button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button-group button.reset {
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+        }
+        .button-group button.reset:hover {
+            background-color: #e0e0e0;
+        }
+        .button-group button.continue {
+            background-color: #007bff; /* Blue color for continue */
+            color: #fff;
+        }
+        .button-group button.continue:hover {
+            background-color: #0056b3;
+        }
+        .footer-info {
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+        .header-steps {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .header-steps span {
+            margin-right: 15px;
+            position: relative;
+        }
+        .header-steps span.active {
+            font-weight: bold;
+            color: #333;
+        }
+        .header-steps span:not(:last-child)::after {
+            content: '>';
+            position: absolute;
+            right: -10px;
+            top: 0;
+            color: #999;
+        }
+        .required-note {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .footer-info img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px; /* Equivalent to mr-1 */
+        }
